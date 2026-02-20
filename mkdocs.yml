@@ -1,0 +1,47 @@
+site_name: CAS User Guide
+
+theme:
+  name: material
+  language: en
+  logo: images/new logo.png
+  favicon: images/new logo.png
+  palette:
+    - scheme: default
+      primary: white
+      accent: blue
+  features:
+    - navigation.expand
+    - navigation.tracking
+    - navigation.top
+    - toc.follow
+    - search.highlight
+    - content.code.copy
+
+plugins:
+  - search
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - toc:
+      toc_depth: 2-2
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Setup:
+      - Pre-criteria: setup/pre-criteria.md
+      - User Creation: setup/user-creation.md
+      - System Rules: setup/system-rules.md
+      - Codes Table: setup/codes-table.md
+      - Interview Location Setup: setup/interview-location.md
+      - AA Management: setup/aa-management.md
+      - Badges & Achievements: setup/badges-achievements.md
+      - Audit Logs: setup/audit-logs.md
+      - System Monitoring: setup/system-monitoring.md
+  - How to Create Case:
+      - Create Case: case/create-case.md
+      - Monitor Broadcast: case/monitor-broadcast.md
+  - Reporting & Analytics:
+      - Reports Overview: reports/index.md
