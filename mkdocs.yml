@@ -1,4 +1,4 @@
-site_name: CAS User Guide
+site_name: test2
 
 theme:
   name: material
@@ -45,3 +45,4 @@ nav:
       - Monitor Broadcast: case/monitor-broadcast.md
   - Reporting & Analytics:
       - Reports Overview: reports/index.md
+
