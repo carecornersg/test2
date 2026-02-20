@@ -1,0 +1,1063 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../setup/system-monitoring/">
+      
+      
+        <link rel="next" href="../monitor-broadcast/">
+      
+      
+      <link rel="icon" href="../../images/new logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.21">
+    
+    
+      
+        <title>Create Case - CAS User Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2a3383ac.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#overview" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="CAS User Guide" class="md-header__button md-logo" aria-label="CAS User Guide" data-md-component="logo">
+      
+  <img src="../../images/new logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CAS User Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Create Case
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="blue"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="CAS User Guide" class="md-nav__button md-logo" aria-label="CAS User Guide" data-md-component="logo">
+      
+  <img src="../../images/new logo.png" alt="logo">
+
+    </a>
+    CAS User Guide
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Setup
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Setup
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/pre-criteria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pre-criteria
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/user-creation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    User Creation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/system-rules/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    System Rules
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/codes-table/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Codes Table
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/interview-location/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Interview Location Setup
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/aa-management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AA Management
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/badges-achievements/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Badges & Achievements
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/audit-logs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Audit Logs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/system-monitoring/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    System Monitoring
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    How to Create Case
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            How to Create Case
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Create Case
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Create Case
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-start-most-common-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick Start (Most common flow)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-new-case" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create New Case
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#video-tutorial" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎥 Video Tutorial
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Next Steps
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../monitor-broadcast/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Monitor Broadcast
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Reporting & Analytics
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Reporting & Analytics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reports/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Reports Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-start-most-common-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick Start (Most common flow)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-new-case" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create New Case
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#video-tutorial" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎥 Video Tutorial
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Next Steps
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="create-case">📝 Create Case</h1>
+<p>This guide will walk you through creating a new case in CAS.</p>
+<h2 id="overview">Overview</h2>
+<p>When an Investigation Officer (IO) calls to request an Appropriate Adult, you will create a new case in CAS. The system will then broadcast to eligible AAs based on the case requirements.</p>
+<hr />
+<h2 id="quick-start-most-common-flow">Quick Start (Most common flow)</h2>
+<ol>
+<li>Go to <strong>Cases</strong> → <strong>Create New Case</strong></li>
+<li>Add youth information and number of AAs required</li>
+<li>Set interview schedule and location</li>
+<li>Add IO contact details</li>
+<li>Add special requirements (optional)</li>
+<li>Choose <strong>Assignment Method</strong> (Broadcast, manual assignment or data entry)</li>
+<li>Click <strong>Start Broadcast</strong></li>
+</ol>
+<hr />
+<h3 id="how-case-broadcast-works">How Case Broadcast Works</h3>
+<p><strong>Broadcast Types:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Name</th>
+<th>AA Pool</th>
+<th>When Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>B1</strong></td>
+<td>Standard Broadcast</td>
+<td>Primary region AAs</td>
+<td>First broadcast</td>
+</tr>
+<tr>
+<td><strong>B2</strong></td>
+<td>Secondary Region</td>
+<td>Primary + Secondary region AAs</td>
+<td>Re-broadcasts</td>
+</tr>
+<tr>
+<td><strong>B3</strong></td>
+<td>Staff-Only</td>
+<td>AA Staff only (ignores preferences)</td>
+<td>Urgent final attempt</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Broadcast Flow:</strong></p>
+<ol>
+<li><strong>Broadcast 1 (B1)</strong> → Case sent to AAs in primary region</li>
+<li><strong>Holding Period</strong> (5 mins) → System collects multiple responses</li>
+<li><strong>Weighted Selection</strong> → If multiple responses, system selects based on workload:</li>
+<li>Bucket A (0-2 cases/month): 60% chance</li>
+<li>Bucket B (3-6 cases/month): 30% chance</li>
+<li>Bucket C (7+ cases/month): 10% chance</li>
+<li><strong>Waiting Period</strong> (10 mins) → FCFS if no response during holding</li>
+<li><strong>Confirmation</strong> (5 mins) → Selected AA must confirm assignment</li>
+<li><strong>Broadcast 2 (B2)</strong> → Expands to secondary regions if no confirmation</li>
+<li><strong>Broadcast 3 (B3)</strong> → Staff-only broadcast for urgent cases</li>
+</ol>
+<p><strong>Urgency Classification:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Classification</th>
+<th>Condition</th>
+<th>Broadcast Sequence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Standard</strong></td>
+<td>Interview &gt; 4 hours away</td>
+<td>B1 → B2 → B2...</td>
+</tr>
+<tr>
+<td><strong>Urgent</strong></td>
+<td>Interview ≤ 4 hours away</td>
+<td>B1 → B2 → B3</td>
+</tr>
+<tr>
+<td><strong>Last Minute</strong></td>
+<td>Interview ≤ 90 mins (AA cancels)</td>
+<td>Force B3 immediately</td>
+</tr>
+</tbody>
+</table>
+<p><strong>8-Stage Filtering:</strong> Before broadcast, system filters AAs by: Qualifications → Region → Timing → Gender → Language → Race → Cooldown → Quiet Hours</p>
+<hr />
+<h2 id="create-new-case">Create New Case</h2>
+<h3 id="step-1-navigate-to-cases">Step 1: Navigate to Cases</h3>
+<p>Login to CAS Web Portal. In the left-hand side menu, navigate to <strong>Cases</strong></p>
+<h3 id="step-2-click-create-new-case">Step 2: Click Create New Case</h3>
+<p>Click <strong>Create New Case</strong> button</p>
+<p><img alt="Create New Case 1" src="../../images/Create%20new%20case%201%20replace.png" style="max-width:800px" /></p>
+<h3 id="step-3-fill-youth-information">Step 3: Fill Youth Information</h3>
+<p>Fill in the youth details:</p>
+<ul>
+<li><strong>Youth Name</strong> – Full name of young suspect (required)</li>
+<li><strong>Youth Age</strong> – Age of youth (6-17 years)</li>
+<li><strong>Youth Gender</strong> – Male / Female / Other (required)</li>
+</ul>
+<p>If more than one youth, click <strong>Add New Youth</strong> to add additional youth (maximum 7).</p>
+<p>Then input the <strong>Number of AAs Required</strong> for this case.</p>
+<p><img alt="Create New Case 2" src="../../images/create%20new%20case%202.png" style="max-width:800px" /></p>
+<h3 id="step-4-fill-offense-details">Step 4: Fill Offense Details</h3>
+<p>Select the <strong>Specific Offense</strong> from the offense list dropdown.</p>
+<p><img alt="Offense Details" src="../../images/offense%20details.png" style="max-width:800px" /></p>
+<h3 id="step-5-specify-interview-schedule">Step 5: Specify Interview Schedule</h3>
+<ul>
+<li><strong>Interview Date</strong> – Date of interview</li>
+<li><strong>Interview Time</strong> – Time of interview</li>
+<li><strong>Location</strong> – Police station or other location</li>
+<li><strong>House Visit</strong> – Check if interview requires house visit</li>
+</ul>
+<p><img alt="Interview Schedule 1" src="../../images/interview%20schedule%201.png" style="max-width:800px" /></p>
+<p>If <strong>House Visit</strong> is checked, the House Visit qualification requirement will be automatically added.</p>
+<p><img alt="Interview Schedule 2" src="../../images/interview%20schedule%202.png" style="max-width:800px" /></p>
+<h3 id="step-6-fill-io-information">Step 6: Fill IO Information</h3>
+<ul>
+<li><strong>IO Name</strong> – Investigation Officer's full name (required)</li>
+<li><strong>Contact Number</strong> – Primary phone (8 digits, starts with 6/8/9)</li>
+<li><strong>Alt Contact Number</strong> – Alternative phone, optional (8 digits, starts with 6/8/9)</li>
+</ul>
+<p><img alt="IO Info" src="../../images/IO%20Details.png" style="max-width:800px" /></p>
+<h3 id="step-7-select-special-requirements-optional">Step 7: Select Special Requirements (Optional)</h3>
+<p>If the case requires specific AA characteristics:</p>
+<ul>
+<li><strong>Gender</strong> – Male or Female AA preferred</li>
+<li><strong>Race</strong> – Preferred ethnicity</li>
+<li><strong>Language</strong> – Required spoken language</li>
+<li><strong>Qualifications</strong> – Additional qualifications needed</li>
+</ul>
+<p><img alt="Special Requirements" src="../../images/Special%20require.png" style="max-width:800px" /></p>
+<h3 id="step-8-choose-assignment-method">Step 8: Choose Assignment Method</h3>
+<ul>
+<li><strong>Broadcast</strong> – Notify all eligible AAs via automated selection.</li>
+<li><strong>Manual Assignment</strong> – Select a specific AA directly.</li>
+<li><strong>Data Entry Only</strong> – Record completed case without notification. Use for cases completed offline, for records only.</li>
+</ul>
+<p><strong>Broadcast:</strong></p>
+<p>If you choose <strong>Broadcast</strong>, CAS will show:</p>
+<ul>
+<li>The <strong>number of eligible AAs</strong> for this case (based on the criteria you entered)</li>
+<li>Case-level <strong>assignment timing parameters</strong> that you can adjust for this specific case before starting:</li>
+<li><strong>Holding Period</strong></li>
+<li><strong>Waiting Period</strong></li>
+<li><strong>Confirmation Period</strong></li>
+</ul>
+<p><img alt="Broadcast" src="../../images/Broadcast%20replace.png" style="max-width:800px" /></p>
+<p><strong>Manual Assignment:</strong></p>
+<p>If you choose <strong>Manual Assignment</strong>, you can view the list of <strong>eligible AAs</strong>, pick an AA by name and select manual assignment reason droplist.</p>
+<p><strong>Urgent manual assignment:</strong> If the manual assignment reason is <strong>Urgent</strong>, the AA must respond within <strong>3 minutes</strong>.</p>
+<p><img alt="Manual Assignment" src="../../images/Manual%20assignment.png" style="max-width:800px" /></p>
+<p><strong>Data Entry Only:</strong></p>
+<p>This method is used to <strong>record cases that were completed offline</strong> — no notification will be sent to AA, and the case goes directly to <strong>Completed</strong> status.</p>
+<ul>
+<li><strong>AA Name</strong> – Shows all AAs for selection (search by name available)</li>
+<li><strong>Youth Name</strong> – Auto-filled from youth info entered above</li>
+</ul>
+<p><img alt="Data Entry" src="../../images/Data%20Entry.png" style="max-width:800px" /></p>
+<h3 id="step-9-start-broadcast-assignement-or-save">Step 9: Start Broadcast/ Assignement or Save</h3>
+<ul>
+<li><strong>Start Broadcast or Start Assignment</strong> – Save and start broadcast/ assignment immediately</li>
+<li><strong>Save as Draft</strong> – Save case to broadcast/ assignment later</li>
+</ul>
+<hr />
+<h2 id="video-tutorial">🎥 Video Tutorial</h2>
+<p>Follow this short video to see how each case assignment method is created and how it appears on the AA mobile app!</p>
+<h3 id="broadcast-and-pending-confirmation-case">Broadcast and Pending Confirmation Case</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/O1c6Lhqo1pI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gaimzN6Z20U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h3 id="manual-assignment-case">Manual Assignment Case</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9XBtOPPteRM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h3 id="data-entry">Data Entry</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/T0orTEvNfPQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<hr />
+<h2 id="next-steps">Next Steps</h2>
+<p>After creating a case: <a href="../monitor-broadcast/">Monitor Broadcast</a> - Track AA responses and to <strong>edit</strong> or <strong>cancel</strong> a case, follow the steps in this page</p>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<p><strong>Phone validation error</strong>: Ensure phone is 8 digits starting with 6, 8, or 9</p>
+<p><strong>Can't start broadcast</strong>: Check all required fields are filled</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "navigation.tracking", "navigation.top", "toc.follow", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
