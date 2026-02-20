@@ -1,0 +1,1018 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../create-case/">
+      
+      
+        <link rel="next" href="../../reports/">
+      
+      
+      <link rel="icon" href="../../images/new logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.21">
+    
+    
+      
+        <title>Monitor Broadcast - CAS User Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2a3383ac.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#overview" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="CAS User Guide" class="md-header__button md-logo" aria-label="CAS User Guide" data-md-component="logo">
+      
+  <img src="../../images/new logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CAS User Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Monitor Broadcast
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="blue"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="CAS User Guide" class="md-nav__button md-logo" aria-label="CAS User Guide" data-md-component="logo">
+      
+  <img src="../../images/new logo.png" alt="logo">
+
+    </a>
+    CAS User Guide
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Setup
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Setup
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/pre-criteria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pre-criteria
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/user-creation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    User Creation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/system-rules/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    System Rules
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/codes-table/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Codes Table
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/interview-location/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Interview Location Setup
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/aa-management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AA Management
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/badges-achievements/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Badges & Achievements
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/audit-logs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Audit Logs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/system-monitoring/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    System Monitoring
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    How to Create Case
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            How to Create Case
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../create-case/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Create Case
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Monitor Broadcast
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Monitor Broadcast
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dashboard-monitoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dashboard &amp; Monitoring
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#view-case-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      View Case Details
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#case-cancellation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Case Cancellation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#case-completion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Case Completion
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#edit-case" class="md-nav__link">
+    <span class="md-ellipsis">
+      Edit Case
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#video-tutorial" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎥 Video Tutorial
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Reporting & Analytics
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Reporting & Analytics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reports/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Reports Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dashboard-monitoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dashboard &amp; Monitoring
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#view-case-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      View Case Details
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#case-cancellation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Case Cancellation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#case-completion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Case Completion
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#edit-case" class="md-nav__link">
+    <span class="md-ellipsis">
+      Edit Case
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#video-tutorial" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎥 Video Tutorial
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="monitor-broadcast">📊 Monitor Broadcast</h1>
+<p>This guide will walk you through monitoring a broadcast in CAS.</p>
+<h2 id="overview">Overview</h2>
+<p>This page explains how to monitor and manage a case after it is created (especially during broadcast). It covers dashboard monitoring, viewing case details and tabs (Documentations/Assignment Method/Audit Logs), role-based access (who can view/edit documentation and payable status), and operational actions such as manual assignment, editing (when allowed), cancelling, and completion rules.</p>
+<hr />
+<h2 id="dashboard-monitoring">Dashboard &amp; Monitoring</h2>
+<p>You can monitor cases either from:</p>
+<ul>
+<li><strong>Dashboard</strong> (operational view for multiple cases), or</li>
+<li><strong>Cases → Case Details</strong> (deep-dive into a specific case)</li>
+</ul>
+<h3 id="what-you-can-see-on-the-dashboard">What You Can See on the Dashboard</h3>
+<p>Typical dashboard information includes:</p>
+<ul>
+<li><strong>Case ID</strong> (format: YY-nnnn)</li>
+<li><strong>Status</strong> (Draft, Broadcasting, Pending Confirmation, Assigned, Completed, Cancelled)</li>
+<li><strong>Broadcast stage</strong></li>
+<li><strong>Location</strong></li>
+<li><strong>Interview Schedule</strong></li>
+<li><strong>Number of Youth, AA required and AA responded</strong></li>
+</ul>
+<h3 id="live-broadcast-monitoring-operational-view">Live Broadcast Monitoring (Operational View)</h3>
+<p>In a typical dashboard view, you will see <strong>multiple cases</strong> listed as cards. Each case card may include a <strong>countdown timer</strong> for <strong>Time to Interview</strong>, so staff can quickly prioritize urgent cases.</p>
+<p><img alt="Dashboard" src="../../images/Dashboard.png" style="max-width:800px" /></p>
+<hr />
+<h2 id="view-case-details">View Case Details</h2>
+<h3 id="step-1-navigate-to-cases">Step 1: Navigate to Cases</h3>
+<p>In the left-hand side menu, navigate to <strong>Cases</strong></p>
+<h3 id="step-2-select-case">Step 2: Select Case</h3>
+<p>Choose the specific case you want to monitor from the list</p>
+<p><img alt="View Case 1" src="../../images/View%20case%201.png" style="max-width:800px" /></p>
+<h3 id="step-3-view-details-tab">Step 3: View Details Tab</h3>
+<p>In the <strong>Details</strong> tab, you can see the Case ID, current Status, Youth Information (name, age, gender), Interview Details (date, time, location), IO Information, and any Special Requirements.</p>
+<p><img alt="View Case 2" src="../../images/View%20case%202.png" style="max-width:800px" /></p>
+<h3 id="step-4-view-documentations-tab">Step 4: View Documentations Tab</h3>
+<p>View AA documentation after they submit it:</p>
+<ul>
+<li>Photos uploaded by AA</li>
+<li>Timestamps</li>
+<li>Notes/remarks</li>
+</ul>
+<p><strong>Role-based access (Documentations Tab):</strong></p>
+<ul>
+<li><strong>Call Centre Staff</strong>: Can only see <strong>Timestamp</strong> (cannot view submitted documentation content and cannot see Payable status)</li>
+<li><strong>AAYS Manager / System Administrator</strong>: Can view <strong>all details</strong> and can <strong>Edit Documentation</strong> and <strong>Payable Status</strong></li>
+</ul>
+<p><img alt="View Case 3" src="../../images/View%20case%203.png" style="max-width:800px" /></p>
+<p><strong>How to Edit Documentation (Manager/Admin):</strong></p>
+<ol>
+<li>Select the documentation entry you want to update</li>
+<li>Edit fields as needed:</li>
+<li><strong>Timestamp</strong></li>
+<li><strong>Remarks</strong></li>
+<li><strong>Photos</strong> (add/remove/replace)</li>
+<li><strong>Payable status</strong> (toggle on/off)</li>
+<li>Click <strong>Save Changes</strong> to apply updates</li>
+</ol>
+<p><img alt="Edit Documentation" src="../../images/Edit%20doc.png" style="max-width:800px" /></p>
+<h3 id="step-5-view-assignment-method-tab">Step 5: View Assignment Method Tab</h3>
+<p>View assignment details including Assignment Type (Broadcast / Manual / Data Entry), current Status, and AA Response Log showing history of responses.</p>
+<p><img alt="View Case 4" src="../../images/View%20case%204.png" style="max-width:800px" /></p>
+<h3 id="view-audit-logs-tab">View Audit Logs Tab</h3>
+<p>View case history edited by the user, and what was changed, and when each action occurred.</p>
+<p><strong>Note:</strong> Audit Logs access requires AAYS Manager (case-related) or System Administrator role.</p>
+<hr />
+<h2 id="case-cancellation">Case Cancellation</h2>
+<h3 id="cancellation-rules">Cancellation Rules</h3>
+<ul>
+<li><strong>During Broadcast</strong> → Broadcast stops, all pending notifications cleared</li>
+<li><strong>AA Already Assigned</strong> → AA receives cancellation notification and has 30 minutes to acknowledge:</li>
+<li>Case status is <strong>Cancelling</strong> if the AA has acknowledged but has <strong>not</strong> submitted documentation yet</li>
+<li>Case status automatically changes to <strong>Cancelled</strong> when the AA submits documentation, <strong>or</strong> after <strong>30 minutes</strong> if the AA does not acknowledge and does not submit documentation</li>
+</ul>
+<h3 id="who-can-cancel">Who Can Cancel</h3>
+<ul>
+<li>Call Centre Staff</li>
+<li>AAYS Manager</li>
+<li>System Administrator</li>
+</ul>
+<p><strong>Note:</strong> Cancelled cases cannot be restored. If needed, create a new case.</p>
+<h3 id="how-to-cancel">How to Cancel</h3>
+<h3 id="step-1-navigate-to-the-case-you-want-to-cancel-click-cancel-button">Step 1: Navigate to the case you want to cancel -&gt; Click <strong>Cancel</strong> button</h3>
+<p><img alt="Cancel Case 1" src="../../images/Cancel%20case%201.png" style="max-width:800px" /></p>
+<h3 id="step-2-select-a-cancellation-reason-and-add-remarks-if-needed">Step 2: Select a <strong>Cancellation Reason</strong> and add <strong>Remarks</strong> if needed</h3>
+<p><img alt="Cancel Case 2" src="../../images/Cancel%20case%202.png" style="max-width:800px" /></p>
+<h3 id="step-3-click-confirm-cancel">Step 3: Click <strong>Confirm Cancel</strong></h3>
+<hr />
+<h2 id="case-completion">Case Completion</h2>
+<p><strong>Important:</strong> For cases with multiple AAs and multiple youths:</p>
+<ul>
+<li>Case status changes to <strong>Completed</strong> only when <strong>ALL assigned AAs</strong> have submitted their documentation</li>
+<li>Each AA must submit documentation for their assigned youth(s)</li>
+<li>You can track individual AA submission status in the <strong>Documentations Tab</strong></li>
+</ul>
+<hr />
+<h2 id="edit-case">Edit Case</h2>
+<p>You can only edit a case when:</p>
+<ul>
+<li>Broadcast is stopped (status = Draft)</li>
+<li>No AA has been assigned yet</li>
+</ul>
+<h3 id="how-to-stop-broadcast-assignment-quick-steps">How to Stop Broadcast / Assignment (Quick steps)</h3>
+<p>If the case is <strong>Broadcasting</strong> and <strong>no AA has been assigned yet</strong>:</p>
+<h3 id="step-1-navigate-to-the-case-you-want-to-stop-click-stop-button">Step 1: Navigate to the case you want to stop -&gt; Click <strong>Stop</strong> button</h3>
+<p><img alt="Stop Broadcast 1" src="../../images/Stop%20brcst%201.png" style="max-width:800px" /></p>
+<h3 id="step-2-click-stop-assignment-to-confirm-stopping">Step 2: Click <strong>Stop Assignment</strong> to confirm stopping</h3>
+<p><img alt="Stop Broadcast 2" src="../../images/Stop%20brcst%202.png" style="max-width:800px" /></p>
+<h3 id="step-3-click-edit">Step 3: Click <strong>Edit</strong></h3>
+<p><img alt="Edit Case 1" src="../../images/Edit%20case%201.png" style="max-width:800px" /></p>
+<h3 id="step-4-update-case-details-as-needed-eg-interview-schedule-location-requirements">Step 4: Update case details as needed (e.g., interview schedule, location, requirements)</h3>
+<p><img alt="Edit Case 2" src="../../images/Edit%20case%202.png" style="max-width:800px" /></p>
+<h3 id="step-5-if-needed-switch-assignment-method-broadcast-manual-assignment">Step 5: If needed, switch <strong>Assignment Method</strong> (<strong>Broadcast ↔ Manual Assignment</strong>)</h3>
+<p><img alt="Edit Case 3" src="../../images/Edit%20case%203.png" style="max-width:800px" /></p>
+<h3 id="step-6-click-save-to-apply-changes-on-case-details-or-confirm-assignment-to-apply-changes-on-assignment-method">Step 6: Click <strong>Save</strong> to apply changes on case details or <strong>Confirm Assignment</strong> to apply changes on assignment method</h3>
+<h3 id="step-7-click-start-assignment-to-re-broadcast-this-case-or-to-do-manual-assignment">Step 7: Click <strong>Start Assignment</strong> to re-broadcast this case or to do manual assignment</h3>
+<p><strong>Note:</strong> You cannot switch a broadcasting case to <strong>Data Entry Only</strong>. Data Entry is used only when the interview is already completed offline and you are recording the case for reporting purposes.</p>
+<hr />
+<h2 id="video-tutorial">🎥 Video Tutorial</h2>
+<p>Follow this short video to see how to initiate case cancellation via web portal, how AA acknowledge cancellation case and edit case while broadcasting.</p>
+<h3 id="cancel-an-assigned-case">Cancel an assigned case</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hV78eypmedY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h3 id="stop-broadcast-to-edit-a-case-no-aa-assigned-yet">Stop broadcast to edit a case (no AA assigned yet)</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/00Uif9OzoKE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "navigation.tracking", "navigation.top", "toc.follow", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
