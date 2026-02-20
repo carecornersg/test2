@@ -1,6 +1,6 @@
-# CAS User Guide - test2
+# CAS User Guide - testing
 
-Welcome to the CAS (Call Activation System) User Guide (Test2). This documentation will walk you through the complete process of setting up and using the CAS system.
+Welcome to the CAS (Call Activation System) User Guide (Testing). This documentation will walk you through the complete process of setting up and using the CAS system.
 
 ## What is CAS?
 
@@ -48,6 +48,7 @@ Create and manage cases
 Operational and management reporting
 
 - [Reports Overview](reports/index.md)
+
 
 
 
